@@ -36,3 +36,7 @@ fs.writeFile("./ReadMe.txt", "Some New Text From Server.JS", (err) => {
     console.log(err);
   }
 });
+
+// Provide String Number in Console In this function Node JS intetionally blocked 
+const a = fs.readFileSync('ReadMe.txt')
+console.log(a.toString())
